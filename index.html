@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE - Réseau Social Éphémère</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 VIBE</h1>
+            <div id="authSection">
+                <button id="loginBtn">Se connecter</button>
+            </div>
+        </header>
+        <main>
+            <div id="vibeForm" style="display: none;">
+                <textarea id="vibeInput" placeholder="Partage ta Vibe... (max 200 caractères)"></textarea>
+                <button id="postBtn">Poster</button>
+            </div>
+            <div id="vibesList"></div>
+        </main>
+        <footer>
+            <p>Un réseau social éphémère - © 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
