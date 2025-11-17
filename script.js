@@ -1,12 +1,14 @@
-// Remplace ces valeurs par TES clés Firebase (disponibles dans la console Firebase)
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "TU_API_KEY_ICI",
-    authDomain: "TON_PROJET.firebaseapp.com",
-    projectId: "TON_PROJET",
-    storageBucket: "TON_PROJET.appspot.com",
-    messagingSenderId: "TON_SENDER_ID",
-    appId: "TON_APP_ID"
+  apiKey: "AIzaSyDrQS_cx6TaGjgJxkiBO0ZeS_6Ke_kuq5Y",
+  authDomain: "vibe-social-12086.firebaseapp.com",
+  projectId: "vibe-social-12086",
+  storageBucket: "vibe-social-12086.firebasestorage.app",
+  messagingSenderId: "322738715658",
+  appId: "1:322738715658:web:bffa10a617849461c373f3"
 };
+
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
@@ -89,3 +91,4 @@ setInterval(() => {
         .get()
         .then(snapshot => snapshot.forEach(doc => doc.ref.delete()));
 }, 300000);
+
