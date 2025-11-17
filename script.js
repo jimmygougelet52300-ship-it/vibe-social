@@ -1,14 +1,14 @@
-// Your web app's Firebase configuration
+// Configuration Firebase pour vibe-social-ae49d
 const firebaseConfig = {
-  apiKey: "AIzaSyDrQS_cx6TaGjgJxkiBO0ZeS_6Ke_kuq5Y",
-  authDomain: "vibe-social-12086.firebaseapp.com",
-  projectId: "vibe-social-12086",
-  storageBucket: "vibe-social-12086.firebasestorage.app",
-  messagingSenderId: "322738715658",
-  appId: "1:322738715658:web:bffa10a617849461c373f3"
+  apiKey: "AIzaSyBSub-toM_kSEjkZmVLX6zSBW2wd82yzTk",
+  authDomain: "vibe-social-ae49d.firebaseapp.com",
+  projectId: "vibe-social-ae49d",
+  storageBucket: "vibe-social-ae49d.appspot.com",
+  messagingSenderId: "386453480474",
+  appId: "1:386453480474:web:66e7a11a657dc10ef01da3"
 };
 
-// Initialize Firebase
+// Initialisation de Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
@@ -91,4 +91,3 @@ setInterval(() => {
         .get()
         .then(snapshot => snapshot.forEach(doc => doc.ref.delete()));
 }, 300000);
-
