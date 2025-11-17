@@ -1,0 +1,97 @@
+:root {
+    --primary: #6c5ce7;
+    --secondary: #a29bfe;
+    --light: #f8f9fa;
+    --dark: #2d3436;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+#loginBtn, #postBtn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+#loginBtn:hover, #postBtn:hover {
+    background: #5649c0;
+}
+
+#vibeInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+}
+
+.vibe {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.vibe p {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.reactions {
+    display: flex;
+    gap: 10px;
+}
+
+.reaction-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reaction-count {
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
